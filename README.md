@@ -151,7 +151,7 @@ WORKDIR /build
 COPY . .
 RUN npm --version && \
     node --version && \
-    npm config set registry "https://artifactory.jamf.build/artifactory/api/npm/npm" && \
+    npm config set registry "https://artifactory.demo.build/artifactory/api/npm/npm" && \
     npm ci --force && \
     npm run build && \
     chmod +x ./start-nginx.sh
